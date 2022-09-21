@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application</title>
+</head>
+
+<body>
+  <!--title-->
+  <h1>Job Application</h1>
+
+  <h3>*denotes mandatory fields</h3>
+
+  <form>
+    <!--name table-->
+    <table>
+      <tr>
+        <td>
+          <h3>First name*</h3>
+        </td>
+        <td>
+          <h3>Last name*</h3>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" name="FirstName" pattern="[a-zA-Z]+" required>
+        </td>
+        <td>
+          <input type="text" name="LastName" pattern="[a-zA-Z]+" required>
+        </td>
+      </tr>
+    </table>
+
+    <!--Email input-->
+    <h3>E-mail*</h3>
+    <input type="email" size="42" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+
+    <!--Phone and fax table-->
+    <table>
+      <tr>
+        <td>
+          <h3>Phone*</h3>
+        </td>
+        <td>
+          <h3>Fax</h3>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" placeholder="E.g. 010-1111-2222" name="Phone" required>
+        </td>
+        <td>
+          <input type="text" name="Fax">
+        </td>
+      </tr>
+    </table>
+
+    <!--province input-->
+    <h3>Province*</h3>
+    <select name="Province" required>
+      <option>Chungcheongbuk-do</option>
+      <option>Chungcheongnam-do</option>
+      <option>Gangwon-do</option>
+      <option>Gyeonggi-do</option>
+      <option>Gyeongsangbuk-do</option>
+      <option>Gyeongsangnam-do</option>
+      <option>Jeollabuk-do</option>
+      <option>jeollanam-do</option>
+      <option>Jeju Special Self-governing Province</option>
+    </select>
+
+    <!--Programming Language table-->
+    <h3>Your programming languages</h3>
+    <table name="ProgrammingLanguages">
+      <tr>
+        <td><input type="checkbox">C++</td>
+        <td><input type="checkbox">Java</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox">Python</td>
+        <td><input type="checkbox">Matlab</td>
+      </tr>
+    </table>
+
+    <!--position-->
+    <h3>Position you are applying for*</h3>
+    <input type="text" size="42" name="Position" required>
+
+    <!--salary and start table-->
+    <table>
+      <tr>
+        <td>
+          <h3>Salary requirements</h3>
+        </td>
+        <td>
+          <h3>When can you start?</h3>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="text" name="Salary"></td>
+        <td><input type="date" name="Start"></td>
+      </tr>
+    </table>
+
+    <!--relocate input-->
+    <h3>Are you willing to relocate?</h3>
+    <input type="radio" checked>Yes <input type="radio">No <input type="radio">Not sure
+
+    <!--last company input-->
+    <h3>Last company you worked for</h3>
+    <input type="text" size="42" name="LastCompany">
+
+    <!--reference comments questions-->
+    <h3>Reference/Comments/Quesitons</h3>
+    <textarea cols="35" rows="7" name="Reference"></textarea>
+    <br>
+
+    <input style="margin-left: 80px;" type="submit" onclick="alert('Your application has been sent.')"
+      value="Send Application">
+  </form>
+
+</body>
+
+</html>
