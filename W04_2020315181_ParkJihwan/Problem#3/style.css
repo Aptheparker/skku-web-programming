@@ -1,0 +1,89 @@
+/*font*/
+@font-face {
+  font-family: 'OTEnjoystoriesBA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*html and body*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2a9df4;
+}
+/*header*/
+header {
+  background-color: #1c2e4a;
+  color: white;
+  height: 50px;
+}
+
+header p {
+  margin: 0px;
+  font-size: 18px;
+  text-align: left;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+header p span {
+  margin: 0px;
+  font-size: 15px;
+  float: right;
+  padding-left: 10px;
+}
+
+header .colored {
+  color: #2a9df4;
+}
+
+div.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 450px;
+  top: 350px;
+  border: solid;
+  border-width: thick;
+  border-color: white;
+  border-radius: 5px;
+  color: white;
+  width: 800px;
+  height: 200px;
+}
+
+div.container .main {
+  margin: 0;
+  font-size: 50px;
+}
+
+p.small {
+  color: white;
+  font-size: 24px;
+  position: absolute;
+  left: 480px;
+  top: 600px;
+}
+
+div.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  position: absolute;
+  left: 750px;
+  top: 700px;
+  background-color: white;
+  color: #2a9df4;
+  width: 200px;
+  height: 50px;
+}
+
+div.container2 .main {
+  margin: 0;
+  font-size: 24px;
+}
