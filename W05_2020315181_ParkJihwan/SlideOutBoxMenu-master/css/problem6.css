@@ -1,0 +1,71 @@
+.page-header__title {
+  color: white;
+}
+
+.codrops-header__title {
+  color: white;
+}
+
+.slide__title {
+  color: white;
+}
+
+.slide__subtitle {
+  color: white;
+}
+
+.tagline {
+  color: white;
+}
+
+.category {
+  color: red;
+}
+
+.action--details {
+  color: orange;
+  font-size: 3rem;
+}
+
+.language table {
+  border: solid 1px white;
+  box-shadow: 5px 5px black, 10px 10px grey, 15px 15px white;
+  border-collapse: collapse;
+}
+
+.language th,
+td {
+  border: solid 1px white;
+  width: 180px;
+  height: 120px;
+  text-align: center;
+  background-color: black;
+}
+
+.language th {
+  color: orange;
+  font-size: 32px;
+}
+
+.language td {
+  color: yellow;
+  font-size: 24px;
+}
+
+.language img {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  border: 3px solid orange;
+  opacity: 0.8;
+}
+
+.details__item-contact {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.details__inner--contact {
+  background: #fff;
+  font-size: 28px;
+  border: 3px black solid;
+}
