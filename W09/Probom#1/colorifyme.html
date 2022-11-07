@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>What's Your Color?</title>
+  <script>
+    //changColor: after clicking button colorify
+    function changeColor() {
+      let color = Math.floor(Math.random() * 16777215).toString(16)
+
+      document.body.style.backgroundColor = '#' + color;
+      document.getElementById("mycolor").innerHTML = "Your Color is #" + color;
+    }
+
+  </script>
+</head>
+
+<body>
+  <p>
+    <button id="colorify" onclick="changeColor()">What's Your Color?</button>
+  <h2 id="mycolor"></h2>
+  </p>
+</body>
+
+</html>

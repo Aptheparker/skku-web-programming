@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>The Angry Super Saipien</title>
+
+	<link href="./css/supersaipien.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+	<h1 class="normal enrage">THE SUPER SAIPIEN IS ANGRY</h1>
+	<div id="city">
+		<img src="./images/supersaipien1.png" id="supersaipien" style="width: 150px;">
+		<div id="targets">
+			<!-- 5 initial people to play with -->
+			<div class="unit monster"></div>
+			<div class="unit monster"></div>
+			<div class="unit monster"></div>
+			<div class="unit evil"></div>
+			<div class="unit evil"></div>
+		</div>
+	</div>
+
+	<fieldset>
+		<legend>Attack!</legend>
+
+		<!---radio buttons--->
+		<p>
+			<button id="add">Add!</button>
+			<button id="kill">Kill!</button>
+			<label><input id="monsters" type="radio" name="gender"> Monsters</label>
+			<label><input id="evils" type="radio" name="gender" checked="checked"> Evils</label>
+		</p>
+
+		<p>
+			<button id="cleanup">Clean up!</button>
+			<button id="stomp">Stomp!</button>
+			<button id="enrage">Super Mode!</button>
+			<button id="patrol">Patrol!</button>
+		</p>
+	</fieldset>
+
+	<fieldset id="legend">
+		<legend>Legend</legend>
+		<div>
+			<div class="unit monster"></div> Monster
+		</div>
+		<div>
+			<div class="unit evil monster"></div> Evil
+		</div>
+		<div>
+			<div class="unit splat monster"></div> splat!
+		</div>
+	</fieldset>
+	<script src="./js/supersaipien.js" type="text/javascript"></script>
+
+</body>
+
+</html>
