@@ -7,19 +7,19 @@ window.onload = function () {
   keyDirection = 0;
   direction.innerHTML = 'right';
   animateScript();
+  document.addEventListener('keydown', function (event) {
+    switch (event.key) {
+      case 'ArrowLeft':
+        keyDirection = 141;
+        direction.innerHTML = 'left';
+        break;
+      case 'ArrowRight':
+        keyDirection = 0;
+        direction.innerHTML = 'right';
+        break;
+    }
+  });
 };
-
-function onEvent(event) {
-  if (event.key === 'ArrowLeft') {
-    direction.innerHTML = 'left';
-    keyDirection = 0;
-    animateScript();
-  } else if (event.key === 'ArrowRight') {
-    direction.innerHTML = 'right';
-    keyDirection = 141;
-    animateScript();
-  }
-}
 
 function animateScript() {
   let position = 108; //start position for the image slicer
@@ -40,5 +40,3 @@ function animateScript() {
     //reset the position to 256px, once position exceeds 1536px
   }, interval); //end of setInterval
 } //end of animateScript()
-
-window.addEventListener('keypress', onEvent);
