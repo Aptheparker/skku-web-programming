@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Meme Generator</title>
+</head>
+
+<body>
+  <section id="main">
+    <h1>Meme Generator</h1>
+
+    <!---input 1--->
+    <div class="input">
+      <label for="myfile">Image 1:</label>
+      <input type="file" id="upperFile" onchange="showUpperImage()">
+      -Upper Content:
+      <input type=" text" id="upperText" onkeyup="showUpperContext()">
+    </div>
+
+    <!---input 2--->
+    <div class="input">
+      <label for="myfile">Image 2:</label>
+      <input type="file" id="lowerFile" onchange="showLowerImage()">
+      -Lower Content:
+      <input type="text" id="lowerText" onkeyup="showLowerContext()">
+    </div>
+
+    <div id="final">
+      <div id="upperOutput">
+        <img id="upperImage">
+        <div id="upperContext">None</div>
+      </div>
+      <div id="lowerOutput">
+        <img id="lowerImage">
+        <div id="lowerContext">None</div>
+      </div>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
