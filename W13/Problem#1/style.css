@@ -1,0 +1,24 @@
+.bigBox {
+  width: 500px;
+  height: 650px;
+  border: solid 3px black;
+}
+
+.smallBox {
+  width: 400px;
+  height: 500px;
+  border: solid 3px black;
+}
+
+#canvas {
+  width: 400px;
+  height: 500px;
+}
+
+.buttonGroup {
+  margin-top: 20px;
+}
+
+.buttonGroup button {
+  font-size: 18px;
+}
