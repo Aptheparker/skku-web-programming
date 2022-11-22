@@ -1,7 +1,7 @@
 'use strict';
 
 function add() {
-  if ($('#targets').children().length <= 10) {
+  if ($('#targets').children().length < 10) {
     let element = $("<div class='unit'></div>");
 
     $('#targets').append(element);
@@ -44,14 +44,10 @@ function color() {
   $('#targets')
     .children()
     .each(function () {
-      if ($(this).css('background-color') === 'red') {
-        $(this).css({
-          'background-color': 'white',
-        });
+      if ($(this).css('background-color') == 'rgb(255, 0, 0)') {
+        $(this).css('background-color', 'white');
       } else {
-        $(this).css({
-          'background-color': 'red',
-        });
+        $(this).css('background-color', 'red');
       }
     });
 }

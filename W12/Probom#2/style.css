@@ -17,8 +17,8 @@ img {
 
 #yesBtn {
   position: absolute;
-  top: 600px;
-  left: 400px;
+  top: 70%;
+  left: 40%;
   width: 100px;
   height: 100px;
   border-radius: 300px;
@@ -32,8 +32,8 @@ img {
 
 #noBtn {
   position: absolute;
-  top: 600px;
-  left: 700px;
+  top: 70%;
+  left: 55%;
   width: 100px;
   height: 100px;
   border-radius: 300px;
