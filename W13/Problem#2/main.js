@@ -4,6 +4,6 @@ $(document).ready(function () {
   $('#btn3').click(function () {
     let canvas = document.createElement('canvas');
     let ctx = canvas.getContext('2d');
-    $('.someBox').appendChild(ctx.strokeRect(0, 0, 100, 100));
+    document.getElementsByClassName('someBox').appendChild(ctx);
   });
 });
