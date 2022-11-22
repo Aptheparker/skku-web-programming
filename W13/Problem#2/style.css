@@ -1,9 +1,36 @@
-.someBox {
-  width: 1000px;
-  height: 100px;
+body {
+  display: flex;
+  flex-direction: column;
 }
 
-canvas {
-  width: 100px;
-  height: 100px;
+#targets {
+  width: 800px;
+  height: 50px;
+}
+
+.unit {
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: solid 1px black;
+  width: 50px;
+  height: 50px;
+  float: left;
+  position: relative;
+  background-color: white;
+}
+
+.normal {
+  border: 8px dashed white;
+  text-decoration: none;
+  color: black;
+}
+
+.splat {
+  background-image: url('../images/splat.png');
+}
+
+#status {
+  font-size: 34pt;
+  text-decoration: blink;
+  color: red;
 }
