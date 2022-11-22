@@ -8,6 +8,10 @@ $(document).ready(function () {
     ctx.moveTo(150, 20);
     ctx.lineTo(60, 120);
     ctx.lineTo(240, 120);
+    ctx.closePath();
+    ctx.lineWidth = 5;
+    ctx.strokeStyle = 'red';
+    ctx.stroke();
     ctx.fill();
   });
   $('#btn2').click(function () {
@@ -16,6 +20,10 @@ $(document).ready(function () {
     ctx.moveTo(150, 120);
     ctx.lineTo(60, 20);
     ctx.lineTo(240, 20);
+    ctx.closePath();
+    ctx.lineWidth = 5;
+    ctx.strokeStyle = 'red';
+    ctx.stroke();
     ctx.fill();
   });
   $('#btn3').click(function () {
