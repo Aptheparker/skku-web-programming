@@ -16,9 +16,7 @@ $(function () {
 $(function () {
   $('#selectable').selectable();
 });
-$(function () {
-  $(document).tooltip();
-});
+
 $(function () {
   $('#sortable1, #sortable2')
     .sortable({
@@ -29,17 +27,32 @@ $(function () {
 
 $(function () {
   $(document).tooltip({
-    items: '[title], #red, #blue',
+    items: '[title], #red, #blue, #darkPink, #yellow, #green, #black, #white',
     content: function () {
       let element = $(this);
       if (element.is('[title]')) {
         return element.attr('title');
       }
       if (element.is('#red')) {
-        return "<div style='background: red'></div>";
+        return "<div style='background-color: red; width: 40px; height:40px'></div>";
       }
       if (element.is('#blue')) {
-        return "<div style='background: blue'></div>";
+        return "<div style='background-color: blue; width: 40px; height:40px'></div>";
+      }
+      if (element.is('#darkPink')) {
+        return "<div style='background-color: #ff00b3; width: 40px; height:40px'></div>";
+      }
+      if (element.is('#yellow')) {
+        return "<div style='background-color: yellow; width: 40px; height:40px'></div>";
+      }
+      if (element.is('#green')) {
+        return "<div style='background-color: green; width: 40px; height:40px'></div>";
+      }
+      if (element.is('#black')) {
+        return "<div style='background-color: black; width: 40px; height:40px'></div>";
+      }
+      if (element.is('#white')) {
+        return "<div style='background-color: white; width: 40px; height:40px'></div>";
       }
     },
   });
