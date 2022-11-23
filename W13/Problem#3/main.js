@@ -20,7 +20,47 @@ $(function () {
   $(document).tooltip();
 });
 $(function () {
-  $('#sortable').sortable();
+  $('#sortable1, #sortable2')
+    .sortable({
+      connectWith: '.connectedSortable',
+    })
+    .disableSelection();
+});
+
+$(function () {
+  $(document).tooltip({
+    items: '[title], #red, #blue',
+    content: function () {
+      let element = $(this);
+      if (element.is('[title]')) {
+        return element.attr('title');
+      }
+      if (element.is('#red')) {
+        return "<div style='background: red'></div>";
+      }
+      if (element.is('#blue')) {
+        return "<div style='background: blue'></div>";
+      }
+    },
+  });
+});
+
+$(function () {
+  $('#submitBtn').click(function () {
+    let result = $('#inputAns');
+    let name = $('#nameInput').val();
+    let date = $('#dateInput').val();
+    result.append('Name: ' + name + '<br>Date:' + date + '<br>');
+  });
+  $('#selectable').selectable({
+    stop: function () {
+      $('.ui-selected').each(function () {
+        let result = $('#animalAns').empty();
+        let text = $('.ui-selected').text();
+        result.append(text);
+      });
+    },
+  });
 });
 
 // function add() {

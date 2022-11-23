@@ -1,80 +1,81 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Hobby survey</title>
-    <link rel="stylesheet" href="jquery-ui-1.10.0.custom.min.css" />
-    <link href="style.css" type="text/css" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script src="main.js" type="text/javascript"></script>
-  </head>
 
-  <body>
-    <h1>Hobby Survey</h1>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Hobby survey</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="main.js" type="text/javascript"></script>
+</head>
 
-    <h2>General Information</h2>
-    <label for="name" id="name">Name:</label>
-    <input type="text" id="nameInput" />
-    <label for="date" id="date">Date:</label>
-    <input type="text" id="dateInput" />
-    <link
-      rel="stylesheet"
-      href="//code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css"
-    />
-    <h2>What kind of animal do you like?</h2>
-    <ol id="selectable">
-      <li
-        class="ui-widget-content"
-        title="Cheerful, Devoted, Easy-going, Protective, Faithful, Impatient"
-      >
-        Dog
-      </li>
-      <li
-        class="ui-widget-content"
-        title="Attractive, Self-confident, Impatient"
-      >
-        Eagle
-      </li>
-      <li
-        class="ui-widget-content"
-        title="Attractive, Spiritual, Sexy, Autonomous, Uncommitted"
-      >
-        Cat
-      </li>
-      <li
-        class="ui-widget-content"
-        title="Charismatic, Zealous, Talented Narcissistic"
-      >
-        Dolphin
-      </li>
-    </ol>
+<body>
+  <h1>Hobby Survey</h1>
 
-    <ul id="sortable">
-      <li
-        class="ui-state-default"
-        title="Charismatic, Zealous, Talented Narcissistic"
-      >
-        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1
-      </li>
-      <li class="ui-state-default">
-        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2
-      </li>
-      <li class="ui-state-default">
-        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3
-      </li>
-      <li class="ui-state-default">
-        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4
-      </li>
-      <li class="ui-state-default">
-        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5
-      </li>
-      <li class="ui-state-default">
-        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6
-      </li>
-      <li class="ui-state-default">
-        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7
-      </li>
+  <h2>General Information</h2>
+  <label for="name" id="name">Name:</label>
+  <input type="text" id="nameInput" />
+  <label for="date" id="date">Date:</label>
+  <input type="text" id="dateInput" />
+
+  <h2>What kind of animal do you like?</h2>
+  <ol id="selectable">
+    <li class="ui-widget-content" title="Cheerful, Devoted, Easy-going, Protective, Faithful, Impatient">
+      Dog
+    </li>
+    <li class="ui-widget-content" title="Attractive, Self-confident, Impatient">
+      Eagle
+    </li>
+    <li class="ui-widget-content" title="Attractive, Spiritual, Sexy, Autonomous, Uncommitted">
+      Cat
+    </li>
+    <li class="ui-widget-content" title="Charismatic, Zealous, Talented Narcissistic">
+      Dolphin
+    </li>
+  </ol>
+
+  <h2>List of some colors which you may like:</h2>
+  <ul id="sortable1" class="connectedSortable">
+    <li class="ui-state-default" id="red">
+      <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Red (#ff0000)
+    </li>
+    <li class="ui-state-default" id="blue">
+      <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Blue (#0000ff)
+    </li>
+    <li class="ui-state-default">
+      <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Dark pink (#ff00b3)
+    </li>
+    <li class="ui-state-default">
+      <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Yellow (#ffff00)
+    </li>
+    <li class="ui-state-default">
+      <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Green (#00FF00)
+    </li>
+    <li class="ui-state-default">
+      <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Black (#000000)
+    </li>
+    <li class="ui-state-default">
+      <span class="ui-icon ui-icon-arrowthick-2-n-s"></span> White (#ffffff)
+    </li>
+  </ul>
+
+
+  <button id="submitBtn">Submit</button>
+
+  <div id="answer">
+    Your answer is:
+    <div id="inputAns"></div>
+    <div id="animalAns"></div>
+    <br><br><br><br>
+    Drop the color(s) here (After this line):
+    <ul id="sortable2" class="connectedSortable">
+      <li></li>
     </ul>
-  </body>
+
+  </div>
+</body>
+
 </html>
